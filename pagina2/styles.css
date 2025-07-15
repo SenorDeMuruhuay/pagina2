@@ -108,7 +108,7 @@ h2 {
 }
 
 /* Ajusta las posiciones para que estén más juntos */
-.memory-card:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.memory-card:nth-child(1) { top: 14%; left: 20%; animation-delay: 0s; }
 .memory-card:nth-child(2) { top: 26%; left: 20%; animation-delay: 1s; }
 .memory-card:nth-child(3) { top: 39%; left: 20%; animation-delay: 2s; }
 .memory-card:nth-child(4) { top: 53%; left: 20%; animation-delay: 0.5s; }
