@@ -422,33 +422,124 @@ h2 {
 }
 
 @media (max-width: 700px) {
+    html, body {
+        font-size: 13px !important;
+    }
     .memory-photo {
-        width: 86vw !important;
-        max-width: 90vw !important;
+        width: 80vw !important;
+        max-width: 80vw !important;
         min-width: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 1vw !important; /* mueve la imagen un poco a la izquierda */
+        margin-left: auto !important;
+        margin-right: auto !important;
         display: block !important;
         border-radius: 10px !important;
         object-fit: cover !important;
         height: auto !important;
-        max-height: 32vh !important;
+        max-height: 28vh !important;
     }
     .memory-text {
-        width: 86vw !important;
-        max-width: 90vw !important;
+        width: 80vw !important;
+        max-width: 80vw !important;
         min-width: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 1vw !important; /* mueve el texto un poco a la izquierda */
+        margin-left: auto !important;
+        margin-right: auto !important;
         display: block !important;
-        font-size: 1.05rem !important;
-        padding: 0.8rem 0.7rem !important;
+        font-size: 1rem !important;
+        padding: 0.7rem 0.6rem !important;
         border-radius: 9px !important;
         line-height: 1.5 !important;
         text-align: center !important;
     }
     .memory-card {
-        margin: 1.5rem auto !important; /* aumenta la separación vertical */
+        margin: 2rem auto !important;
+    }
+    .gallery-arrow {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1.1rem !important;
+        margin: 0 0.4rem !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 600px) {
+    html, body {
+        font-size: 13px !important;
+    }
+    .memory-photo {
+        width: 90vw !important;
+        max-width: 90vw !important;
+        min-width: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+        border-radius: 10px !important;
+        object-fit: cover !important;
+        height: auto !important;
+        max-height: 28vh !important;
+    }
+    .memory-text {
+        width: 90vw !important;
+        max-width: 90vw !important;
+        min-width: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+        font-size: 1rem !important;
+        padding: 0.7rem 0.6rem !important;
+        border-radius: 9px !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+    }
+    .memory-card {
+        width: 44vw !important;
+        height: 44vw !important;
+        max-width: 150px !important;
+        max-height: 150px !important;
+        min-width: 90px !important;
+        min-height: 90px !important;
+        font-size: 1rem !important;
+        margin: 1.5rem 3vw !important;
+        display: inline-flex !important;
+        vertical-align: top !important;
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+    }
+    .sky {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        min-height: 120vh;
+        padding-bottom: 2rem;
+    }
+    .gallery-arrow {
+        display: flex !important;
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1.1rem !important;
+        margin: 0 0.4rem !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        visibility: visible !important;
+    }
+    .gallery-layout {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0 !important;
+        width: 100vw !important;
+        min-height: 40vh !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .memory-card {
+        margin-left: 20vw !important;
+        margin-right: 20vw !important;
     }
 }
 
