@@ -52,9 +52,10 @@ function showGallery(gallery, text) {
     let current = 0;
     renderGallery();
 
-    // --- Soporte de swipe táctil ---
+    // --- Soporte de swipe táctil para móvil ---
     let startX = null;
     const modal = document.getElementById('memory-modal');
+    // Evita duplicar listeners
     modal.ontouchstart = function(e) {
         if (e.touches.length === 1) startX = e.touches[0].clientX;
     };
@@ -95,7 +96,7 @@ function showGallery(gallery, text) {
             </div>
         `;
 
-        // Asignar eventos a las flechas
+        // Asignar eventos a las flechas (por si las usas en escritorio)
         document.querySelector('.gallery-arrow.left').onclick = () => {
             if (current > 0) {
                 current--;

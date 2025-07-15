@@ -509,12 +509,9 @@ h2 {
         right: auto !important;
     }
     .sky {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: space-between !important;
-        align-items: flex-start !important;
         min-height: 120vh;
         padding-bottom: 2rem;
+        /* NO display: flex */
     }
     .gallery-arrow {
         display: flex !important;
